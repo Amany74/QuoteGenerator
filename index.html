@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote generation</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Font for Quote text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="cust-container">
+        <h2 class="title fw-bolder">
+            Quote of the day 
+        </h2>
+        <div class="p-5 text-white">
+            <span class="fw-bolder">(press to get new quote) </span>
+
+        <button onclick="generateNewQuote()" class="btn btn-lg btn-light">
+            New Quote
+        </button></div>
+        
+        <div class="quote-card text-white position-relative d-none">
+            <span class="ico text-white translate-middle-x p-5 mt-4">
+                <i class="fa-solid fs-1 fa-quote-left pt-5"></i>
+            </span>
+            <div class="quote-body text-center">
+                <div id="quote-text" class="px-4 mb-4">
+                                    </div>--
+                <div id="quote-author" class="">
+                    
+                </div>
+            </div>
+            <div class="ico text-white quote-pos">
+                <i class="fa-solid fs-2 fa-quote-right pt-5"></i>
+            </div>
+        </div>
+        <div class="quote-card q-1 blur-card d-none">
+        </div>
+        <div class="quote-card q-2 blur-card d-none">
+        </div>
+    </div>
+
+
+    
+    <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
